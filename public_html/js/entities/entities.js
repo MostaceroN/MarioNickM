@@ -177,5 +177,5 @@ image: "mario",
   
   me.collision.check(this);
   this.type = "mushroom";
-
+  }
      });
