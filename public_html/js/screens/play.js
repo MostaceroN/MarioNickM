@@ -6,6 +6,7 @@ game.PlayScreen = me.ScreenObject.extend({
 		// reset the score
 		game.data.score = 0;
                 
+                //as of now, my score is zero because you cant really get a score in mario             
                 me.levelDirector.loadLevel("level04");
                 
                 //that is the code that will let you go into my first world in mario

@@ -9,6 +9,7 @@ game.PlayerEntity = me.Entity.extend ({
               height: 128,
               getShape: function(){
                   return (new me.Rect(0, 0, 30, 128)).toPolygon();
+                  //this shows how big and wide mario will be in the game
               }
       }]);
   
@@ -31,6 +32,7 @@ game.PlayerEntity = me.Entity.extend ({
   update: function(delta){
       if(me.input.isKeyPressed("right")){
           this.body.vel.x += this.body.accel.x * me.timer.tick;
+          //very confusing code 
           
       }else{
           this.body.vel.x = 0;
@@ -44,6 +46,7 @@ game.PlayerEntity = me.Entity.extend ({
             if (!this.renderable.isCurrentAnimation("bigWalk") && !this.renderable.isCurrentAnimation("grow") && !this.renderable.isCurrentAnimation("shrink")) {
                 this.renderable.setCurrentAnimation("bigWalk");
                 this.renderable.setAnimationFrame();
+                //looks like code that will make my character walks when he transforms into big mario
             }
       }else{
           this.renderable.setCurrentAnimation("bigIdle");
@@ -127,6 +130,7 @@ game.BadGuy = me.Entity.extend({
       this.endX = x + width - this.spritewidth;
       this.pos.x = x + width -this.spritewidth;
       this.updateBounds();
+      //very confusing code that took like 20 minutes to transfer from the video
       
       this.alwaysUpdate = true;
       
@@ -181,6 +185,8 @@ image: "mario",
         height: 64,
         getShape: function(){
         return (new me.Rect(0, 0, 64, 64)).toPolygon();
+        
+        //helps me know the size of my mushrooms
         }
       }]);
   

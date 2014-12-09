@@ -42,11 +42,13 @@ var game = {
             me.pool.register("mario", game.PlayerEntity, true);
             me.pool.register("BadGuy", game.BadGuy);
             me.pool.register("mushroom", game.Mushroom);
+            //the code above is what i need for mario, the bad guy, and the mushrooms
             
             me.pool.register("levelTrigger", game.levelTrigger);
             
 		me.state.set(me.state.MENU, new game.TitleScreen());
 		me.state.set(me.state.PLAY, new game.PlayScreen());
+                //with this, i can have a titlescreen AND a play screen
                 
                 //all the stuff aboove includes, mario, the bad guy, and mushrooms
 

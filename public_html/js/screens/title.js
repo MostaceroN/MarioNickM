@@ -5,12 +5,14 @@ game.TitleScreen = me.ScreenObject.extend({
 	onResetEvent: function() {	
 		me.game.world.addChild( new me.Sprite (0, 0, me.loader.getImage('title-screen')), -10);
                 me.input.bindKey(me.input.KEY.ENTER, "start");
-                
+                //without a titlescreen, the game would suck alot cause it wouldnt look professional
                 //by pressing enter, i can start my game with ease
                 me.game.world.addChild(new(me.Renderable.extend ({
                     init: function (){
                         this._super(me.Renderable, 'init',[510, 30, me.game.viewport.width, me.game.viewport.height]);
                         this.font = new me.Font("Arial", 46, "white");
+                        //the font of my title screen, the color of the letters in the title screen
+                        // and the font size of the titlescreen
                     
                     },
                     

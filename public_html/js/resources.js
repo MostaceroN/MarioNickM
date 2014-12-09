@@ -25,7 +25,9 @@ game.resources = [
  	 */
         {name: "level04", type: "tmx", src: "data/map/level04.tmx"},
         {name: "level05", type: "tmx", src: "data/map/level05.tmx"}
-
+        
+        //the code i need to be able to play in my two coinsiding worlds on mario
+        
 	/* Background music. 
 	 * @example
 	 * {name: "example_bgm", type: "audio", src: "data/bgm/"},
