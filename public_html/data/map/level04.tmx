@@ -32,6 +32,7 @@
  </layer>
  <layer name="collision" width="16" height="9" opacity="0.2">
   <properties>
+   <property name="level" value="level05"/>
    <property name="type" value="solid"/>
   </properties>
   <data encoding="base64">
