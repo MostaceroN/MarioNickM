@@ -128,5 +128,9 @@ game.BadGuy = me.Entity.extend({
         
         this._super(me.Entity, "update", [delta]);
         return true;
+    },
+    
+    collideHandler: function(){
+        
     }
 });
