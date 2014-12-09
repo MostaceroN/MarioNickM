@@ -10,6 +10,7 @@ game.resources = [
         {name: "title-screen", type:"image", src: "data/img/title-screen.png"},
         {name: "slime", type:"image", src: "data/img/slime-spritesheet.png"},
         {name: "mushroom", type:"image", src: "data/img/mushroom.png"},
+        //this enables all the pretty pictures to be displayed on my game
         
 	/* Atlases 
 	 * @example
@@ -23,7 +24,7 @@ game.resources = [
 	 * {name: "example01", type: "tmx", src: "data/map/example01.json"},
  	 */
         {name: "level04", type: "tmx", src: "data/map/level04.tmx"},
-        {name: "level05", type: "tmx", src: "data/map/level05.tmx"},
+        {name: "level05", type: "tmx", src: "data/map/level05.tmx"}
 
 	/* Background music. 
 	 * @example

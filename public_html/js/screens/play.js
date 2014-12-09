@@ -7,6 +7,8 @@ game.PlayScreen = me.ScreenObject.extend({
 		game.data.score = 0;
                 
                 me.levelDirector.loadLevel("level04");
+                
+                //that is the code that will let you go into my first world in mario
 
                 this.resetPlayer(0, 400);
             
@@ -14,6 +16,8 @@ game.PlayScreen = me.ScreenObject.extend({
 		// add our HUD to the game world
 		this.HUD = new game.HUD.Container();
 		me.game.world.addChild(this.HUD);
+                
+                //with this code, mario can move to the right 
 	},
 
 
@@ -29,5 +33,6 @@ game.PlayScreen = me.ScreenObject.extend({
              var player = me.pool.pull("mario", x, y, {});
             me.game.world.addChild(player, 6);
             
+            //this helps my player do lots of fun things thanks to the code
         }
 });

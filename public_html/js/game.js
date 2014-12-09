@@ -47,6 +47,8 @@ var game = {
             
 		me.state.set(me.state.MENU, new game.TitleScreen());
 		me.state.set(me.state.PLAY, new game.PlayScreen());
+                
+                //all the stuff aboove includes, mario, the bad guy, and mushrooms
 
 		// Start the game.
 		me.state.change(me.state.MENU);
